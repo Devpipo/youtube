@@ -3,7 +3,6 @@ require("dotenv").config();
 const { Client } = require("discord.js");
 const fetch = require("node-fetch");
 const client = new Client();
-const token = process.env.TOKEN;
 const PREFIX = "$";
 
 const ACTIVITIES = {
@@ -116,4 +115,4 @@ client.on("message", async message => {
     }
 });
 
-client.login(token);
+client.login();
