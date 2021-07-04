@@ -3,7 +3,7 @@ require("dotenv").config();
 const { Client } = require("discord.js");
 const fetch = require("node-fetch");
 const client = new Client();
-const tokne = process.env.TOKEN;
+const token = process.env.TOKEN;
 const PREFIX = "$";
 
 const ACTIVITIES = {
